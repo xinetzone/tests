@@ -4,4 +4,4 @@
 
 Explore and studying.
 
-定制一个 JavaScript 终端控制台，在 [console](./xinet-console/)。
+定制一个 JavaScript 终端控制台，在 [console](https://github.com/xinetzone/xinet-console/)。
