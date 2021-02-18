@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>w3.css Web</title>
-    <link rel="stylesheet" href="https://xinetzone.github.io/w3css/4/w3.css">
-    <script src="https://xinetzone.github.io/lib/w3.js"></script>
+    <base href="//xinetzone.github.io">
+    <link rel="stylesheet" href="w3css/4/w3.css">
+    <script src="lib/w3.js"></script>
 </head>
 
 <body class="w3-light-blue">
@@ -15,13 +16,30 @@
         <h1 class="w3-center">如果创建 Web Site</h1>
         <p>使用相同的 HTML Skeleton，Style Sheet，JavaScript。</p>
     </header>
-    <img class="nature" src="https://www.w3schools.com/w3css/img_snowtops.jpg" width="100%">
-    <img class="nature" src="https://www.w3schools.com/w3css/img_mountains.jpg" width="100%">
-    <img class="nature" src="https://www.w3schools.com/w3css/img_nature.jpg" width="100%">
 
-    <script>
-        w3.slideshow(".nature", 1500);
-    </script>
+    <section id="banner" class="w3-card w3-teal">
+        <h2>轮播图</h2>
+        <img class="nature" src="medias/banner/0.jpg" alt="banner" width="100%" height=600px>
+        <img class="nature" src="medias/banner/1.jpg" alt="banner" width="100%" height=600px>
+        <img class="nature" src="medias/banner/2.jpg" alt="banner" width="100%" height=600px>
+        <img class="nature" src="medias/banner/3.jpg" alt="banner" width="100%" height=600px>
+        <img class="nature" src="medias/banner/4.jpg" alt="banner" width="100%" height=600px>
+        <img class="nature" src="medias/banner/5.jpg" alt="banner" width="100%" height=600px>
+        <img class="nature" src="medias/banner/6.jpg" alt="banner" width="100%" height=600px>
+        <script>
+            w3.slideshow(".nature", 1800)
+        </script>
+    </section>
+
+    <section class="w3-card" style="width:200px">
+        <h2>个人名片</h2>
+        <img src="xinzone/my-card.jpg" alt="刘新伟" style="width:100%">
+        <div class="w3-container w3-center">
+            <p class="w3-xlarge">刘新伟</p>
+            <p>Engineer</p>
+        </div>
+    </section>
+
 </body>
 
 </html>
