@@ -18,26 +18,51 @@
             Click on the links below.</p>
     </div>
 
-    <div class="w3-bar w3-black">
-        <button class="w3-bar-item w3-button" onclick="w3.toggleTab('.city', '#London')">London</button>
-        <button class="w3-bar-item w3-button" onclick="w3.toggleTab('.city', '#Paris')">Paris</button>
-        <button class="w3-bar-item w3-button" onclick="w3.toggleTab('.city', '#Tokyo')">Tokyo</button>
-    </div>
+    <section class="w3-grey">
+        <div class="w3-bar w3-black w3-opacity w3-display-container" style="width:30%">
+            <button class="w3-bar-item w3-button tab" onclick="w3.toggleTab('.city', '.London', event)">London</button>
+            <button class="w3-bar-item w3-button tab" onclick="w3.toggleTab('.city', '.Paris', event)">Paris</button>
+            <button class="w3-bar-item w3-button tab" onclick="w3.toggleTab('.city', '.Tokyo', event)">Tokyo</button>
+        </div>
 
-    <div id="London" class="w3-container city">
-        <h2>London</h2>
-        <p>London is the capital city of England.</p>
-    </div>
+        <div class="w3-container London city">
+            <h2>London1</h2>
+            <p>London is the capital city of England.</p>
+        </div>
 
-    <div id="Paris" class="w3-container city" style="display:none">
-        <h2>Paris</h2>
-        <p>Paris is the capital of France.</p>
-    </div>
+        <div class="w3-container Tokyo city" style="display:none">
+            <h2>Tokyo1</h2>
+            <p>Tokyo is the capital of Japan.</p>
+        </div>
 
-    <div id="Tokyo" class="w3-container city" style="display:none">
-        <h2>Tokyo</h2>
-        <p>Tokyo is the capital of Japan.</p>
-    </div>
+        <div class="w3-container Paris city" style="display:none">
+            <h2>Paris1</h2>
+            <p>Paris is the capital of France.</p>
+        </div>
+    </section>
+
+    <section class="w3-light-green">
+        <div class="w3-bar w3-black w3-opacity w3-display-container" style="width:30%">
+            <button class="w3-bar-item w3-button tab" onclick="w3.toggleTab('.city', '.London', event)">London</button>
+            <button class="w3-bar-item w3-button tab" onclick="w3.toggleTab('.city', '.Paris', event)">Paris</button>
+            <button class="w3-bar-item w3-button tab" onclick="w3.toggleTab('.city', '.Tokyo', event)">Tokyo</button>
+        </div>
+
+        <div class="w3-container London city">
+            <h2>London</h2>
+            <p>London is the capital city of England.</p>
+        </div>
+
+        <div class="w3-container Tokyo city" style="display:none">
+            <h2>Tokyo</h2>
+            <p>Tokyo is the capital of Japan.</p>
+        </div>
+
+        <div class="w3-container Paris city" style="display:none">
+            <h2>Paris</h2>
+            <p>Paris is the capital of France.</p>
+        </div>
+    </section>
 </body>
 
 </html>
