@@ -19,9 +19,9 @@
     </div>
 
     <div class="w3-bar w3-black">
-        <button class="w3-bar-item w3-button" onclick="openTab('city', 'London')">London</button>
-        <button class="w3-bar-item w3-button" onclick="openTab('city', 'Paris')">Paris</button>
-        <button class="w3-bar-item w3-button" onclick="openTab('city', 'Tokyo')">Tokyo</button>
+        <button class="w3-bar-item w3-button" onclick="openTab('.city', '#London')">London</button>
+        <button class="w3-bar-item w3-button" onclick="openTab('.city', '#Paris')">Paris</button>
+        <button class="w3-bar-item w3-button" onclick="openTab('.city', '#Tokyo')">Tokyo</button>
     </div>
 
     <div id="London" class="w3-container city">
@@ -42,11 +42,8 @@
     <script>
         function openTab(tabGroupName, tabID) {
             let i
-            let x = document.querySelectorAll(`.${tabGroupName}`)
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none"
-            }
-            document.querySelector(`#${tabID}`).style.display = "block"
+            let x = w3.hide(tabGroupName)
+            document.querySelector(tabID).style.display = "block"
         }
     </script>
 </body>
