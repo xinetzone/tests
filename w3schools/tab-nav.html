@@ -19,9 +19,9 @@
     </div>
 
     <div class="w3-bar w3-black">
-        <button class="w3-bar-item w3-button" onclick="openTab('.city', '#London')">London</button>
-        <button class="w3-bar-item w3-button" onclick="openTab('.city', '#Paris')">Paris</button>
-        <button class="w3-bar-item w3-button" onclick="openTab('.city', '#Tokyo')">Tokyo</button>
+        <button class="w3-bar-item w3-button" onclick="w3.toggleTab('.city', '#London')">London</button>
+        <button class="w3-bar-item w3-button" onclick="w3.toggleTab('.city', '#Paris')">Paris</button>
+        <button class="w3-bar-item w3-button" onclick="w3.toggleTab('.city', '#Tokyo')">Tokyo</button>
     </div>
 
     <div id="London" class="w3-container city">
@@ -38,14 +38,6 @@
         <h2>Tokyo</h2>
         <p>Tokyo is the capital of Japan.</p>
     </div>
-
-    <script>
-        function openTab(tabGroupName, tabID) {
-            let i
-            let x = w3.hide(tabGroupName)
-            document.querySelector(tabID).style.display = "block"
-        }
-    </script>
 </body>
 
 </html>
